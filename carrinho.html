@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Armazém do Marcelo</h1>
+        </header>
+        <nav>
+            <a href="index.html">Voltar à Loja</a>
+        </nav>
+
+        <section id="carrinho">
+            <h2>Itens no Carrinho</h2>
+            <table id="tabela-carrinho" border="1" cellspacing="0" cellpadding="5"></table>
+            <div class="row">
+                <div class="col-6">
+                    <div id="frete">
+                        <label for="select-frete">Calcular Frete:</label>
+                        <select id="select-frete" onchange="atualizarCarrinho()">
+                            <option value="SQN 102">SQN 102 (R$ 5,00)</option>
+                            <option value="SQN 103">SQN 103 (R$ 4,00)</option>
+                            <option value="SQN 104">SQN 104 (R$ 3,00)</option>
+                            <option value="SQN 105">SQN 105 (R$ 2,00)</option>
+                            <option value="SQN 106">SQN 106 (R$ 3,00)</option>
+                            <option value="SQN 302">SQN 302 (R$ 5,00)</option>
+                            <option value="SQN 303">SQN 303 (R$ 4,00)</option>
+                            <option value="SQN 304">SQN 304 (R$ 3,00)</option>
+                            <option value="SQN 305" selected>SQN 305 (Grátis)</option>
+                            <option value="SQN 306">SQN 306 (R$ 3,00)</option>
+                            <option value="SQN 307">SQN 307 (R$ 4,00)</option>
+                            <option value="SQN 308">SQN 308 (R$ 5,00)</option>
+                        </select>
+                    </div>
+                    Obs: Entregas serão feitas entre 13h e 14h.
+                </div>
+            </div>
+
+            <form id="form-finalizar">
+                <div class="row">
+                    <div class="col-12">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="João Silva" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="complemento">Complemento do Endereço:</label>
+                        <input type="text" id="complemento" placeholder="SQN 305 A 211" required>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Minha Loja. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+
+    <script src="app-carrinho.js"></script>
+</body>
+
+</html>

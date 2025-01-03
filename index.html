@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Armazém do Marcelo</h1>
+        </header>
+        <nav>
+            <a href="carrinho.html" class="btn btn-secondary carrinho" id="carrinho-btn">Carrinho <span id="carrinho-count">0</span></a>
+        </nav>
+
+        <section id="produtos">
+            <div class="produto">
+                <h3>Mel de Abelha</h3>
+                <img src="assets/produtos/mel-de-abelha-armazem-do-marcelo.jpg" alt="imagem garrafa com mel" />
+                <span class="preco">R$25,00</span>
+                <span class="descricao">700g do Puro Mel de abelha</span>
+                <button class="btn btn-primary" onclick="adicionarAoCarrinho('Mel de Abelha', 25)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Óleo de Coco</h3>
+                <img src="assets/produtos/oleo-de-coco-armazem-do-marcelo.jpg" alt="imagem óleo de coco" />
+                <span class="preco">R$20,00</span>
+                <span class="descricao">240ml de óleo de Coco Extra virgem</span>
+                <button class="btn btn-primary" onclick="adicionarAoCarrinho('Óleo de Coco', 20)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Bateria CR2032 Panasonic</h3>
+                <img src="assets/produtos/cr2032-armazem-do-marcelo.jpg" alt="imagem bateria CR2032" />
+                <span class="preco">R$14,00</span>
+                <span class="descricao">Bateria CR2032 3V de Lítio Longa Duração e Confiável para Placa mãe, Controles, Balanças</span>
+                <button class="btn btn-primary" onclick="adicionarAoCarrinho('Bateria CR2032 Panasonic', 14)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <h3>Controle PPA 433mhz</h3>
+                <img src="assets/produtos/controle-ppa--armazem-do-marcelo.jpg" alt="imagem controle PPA" />
+                <span class="preco">R$60,00</span>
+                <span class="descricao">Controle remoto portao automatico 433mhz</span>
+                <button class="btn btn-primary" onclick="adicionarAoCarrinho('Controle PPA 433mhz', 60)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Armazém do Marcelo. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </div>
+
+</body>
+
+</html>
