@@ -99,6 +99,13 @@ nav a:focus {
     font-size: 9px;
 }
 
+
+@media (max-width: 768px) {
+    #carrinho-btn span {
+        font-size: 0.6em;
+    }
+}
+
 /*                              Produtos
 ------------------------------------------------------ */
 #produtos {
@@ -173,27 +180,38 @@ footer {
         align-items: flex-center;
     }
 
-    header nav {
+    nav {
         flex-direction: column;
         gap: 10px;
         margin-top: 10px;
     }
 
+    nav a {
+        font-size: 2em;
+    }
+
     #produtos {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 1fr;
     }
 
     .produto {
         padding: 10px;
     }
 
+    .produto h3 {
+        color: #0d0629;
+        font-size: 2em;
+    }
+
     .produto .descricao {
+        min-height:10px;
         font-size: 1.2em;
+        margin:10px 0;
     }
 
     .produto button {
-        font-size: 12px;
-        padding: 3px 6px;
+        font-size: 1.2em;
+        padding: 12px 6px;
     }
 
     footer {
@@ -201,27 +219,6 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-
-    #produtos {
-        grid-template-columns: 1fr;
-    }
-
-    .produto h3 {
-        font-size: 1em;
-    }
-
-    .produto .preco {
-        font-size: 1.2em;
-    }
-
-    .produto .descricao {
-        font-size: 0.7em;
-    }
-}
 
 input, select, button {
     display: block;
@@ -407,6 +404,12 @@ table td button:hover {
     cursor: pointer;
     font-family: "Helvetica Neue", Verdana, Helvetica, Arial, sans-serif;
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 1.4em;
+    }
 }
 
 .btn-primary {
